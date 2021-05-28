@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  "teambit.workspace/workspace": {
+    "name": "react-library",
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    "defaultDirectory": "{scope}/{name}",
+    "defaultScope": "pappcorn.react"
+  },
+  "teambit.dependencies/dependency-resolver": {
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@testing-library/dom": "7.31.0",
+        "@testing-library/jest-dom": "5.12.0",
+        "@testing-library/react": "11.2.7",
+        "@testing-library/user-event": "13.1.9"
+      },
+      "peerDependencies": {
+        "@material-ui/core": "4.11.4",
+        "@material-ui/icons": "4.11.2",
+        "clsx": "1.1.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
+      }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
+  },
+  "teambit.workspace/variants": {
+    "*": {
+      "teambit.react/react": {}
+    }
+  }
+}

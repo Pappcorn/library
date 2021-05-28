@@ -1,0 +1,24 @@
+---
+description: 'A Button component.'
+labels: ['UI', 'MAterial']
+---
+
+import { Button } from './button';
+
+## React Component for rendering a material button
+
+A material button with a loading behavior
+
+### Component usage
+```js
+<Button color="primary">Primary button</Button>
+```
+
+### Using props to activate the load behavior
+
+Modify the load propety to see it change live:
+```js live
+ <Button variant="contained" color="primary" load={false}>
+    Click me
+  </Button>
+```
