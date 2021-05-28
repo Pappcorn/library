@@ -2,8 +2,8 @@
 
 {
     "ui/button": {
-        "scope": "",
-        "version": "",
+        "scope": "pappcorn.react",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "react/ui/button"
     },

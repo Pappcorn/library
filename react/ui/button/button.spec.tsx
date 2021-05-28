@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent  } from '@testing-library/react';
 import { BasicButton, LoadingButton } from './button.composition';
-import userEvent from '@testing-library/user-event';
 
 it('should render with the correct text', () => {
   const { getByText } = render(<BasicButton />);
@@ -12,7 +11,7 @@ it('should render with the correct text', () => {
 it('should disable button', () => {
   render(<LoadingButton />)
   const btn = screen.getByText('Click me');
-  userEvent.click(btn);
+  fireEvent.click(btn);
 
   expect(btn.closest('button')).toBeDisabled();
 })
