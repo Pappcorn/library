@@ -3,13 +3,13 @@
 {
     "ui/button": {
         "scope": "pappcorn.react",
-        "version": "0.0.1",
+        "version": "0.1.0",
         "mainFile": "index.ts",
         "rootDir": "react/ui/button"
     },
     "ui/password": {
-        "scope": "",
-        "version": "",
+        "scope": "pappcorn.react",
+        "version": "1.0.0",
         "mainFile": "index.ts",
         "rootDir": "react/ui/password"
     },
